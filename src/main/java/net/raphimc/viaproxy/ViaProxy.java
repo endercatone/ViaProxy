@@ -124,7 +124,6 @@ public class ViaProxy {
                 if (hasUI) {
                     JOptionPane.showMessageDialog(null, "ViaProxy is not able to run with less than 256MB of RAM.", "ViaProxy", JOptionPane.ERROR_MESSAGE);
                 }
-                System.exit(1);
             } else if (Runtime.getRuntime().maxMemory() < 512 * 1024 * 1024) {
                 Logger.LOGGER.warn("ViaProxy has less than 512MB of RAM. This may cause issues with multiple clients connected.");
                 if (hasUI) {
